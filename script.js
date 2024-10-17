@@ -2,13 +2,12 @@ const minimo = 1;
 const massimo = 6;
 const numeroCasuale =
   Math.floor(Math.random() * (massimo - minimo + 1)) + minimo;
-console.log("Il numero casuale del giocatore 1: " + numeroCasuale);
+console.log("Il numero casuale del giocatore: " + numeroCasuale);
 
-const botMinimo = 1;
-const botMassimo = 6;
+
 const numeroCasualeBot =
-  Math.floor(Math.random() * (botMassimo - botMinimo + 1)) + botMinimo;
-console.log("Il numero casuale del computer è: " + numeroCasualeBot);
+  Math.floor(Math.random() * (massimo - minimo + 1)) + minimo;
+console.log("Il numero casuale del computer: " + numeroCasualeBot);
 
 if (numeroCasuale > numeroCasualeBot) {
     console.log("Hai vinto")
